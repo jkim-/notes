@@ -1,0 +1,7 @@
+How to use grep:
+-i: case-insensitive
+-r: recursive search (in subdiretories)
+
+Example:
+- Want to find when function foo()/Foo() is called in all files in the directory
+grep -ir 'foo()' .
