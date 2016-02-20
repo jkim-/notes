@@ -1,0 +1,5 @@
+Get the raw URL:
+e.g. https://raw.githubusercontent.com/dchao34/bta_tuple_reader/master/bdtaunu_tuple_analyzer/BDtaunuDef.h
+
+On LTDA (VM doesn't work),
+wget https://raw.githubusercontent.com/dchao34/bta_tuple_reader/master/bdtaunu_tuple_analyzer/BDtaunuDef.h .

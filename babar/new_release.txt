@@ -1,0 +1,14 @@
+Compiling fresh copy of BToDTauNuSemiLepHadUser:
+
+ssh -Y ltda
+ssh sl5
+cd awg_home/
+newrel -s $BFROOT/build/j/jkim85/ -t analysis-52 ana52
+cd ana52
+srtpath
+cond24boot11
+addpkg workdir
+gmake workdir.setup
+gmake all
+
+*Check bin to make sure the executable is there

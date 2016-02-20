@@ -1,0 +1,17 @@
+data.worldbank.org
+
+Mortality Rate Male by Country (not by age): 
+http://data.worldbank.org/indicator/SP.DYN.AMRT.MA
+
+Mortality Rate Female by Country (not by age):
+http://data.worldbank.org/indicator/SP.DYN.AMRT.FE
+
+Age-specific Mortality Rate (USA):
+http://www.cdc.gov/nchs/nvss/mortality_tables.htm
+
+Age-specific Mortality Rate (India):
+https://data.gov.in/catalog/estimated-age-specific-death-rates-sex
+
+WHO Mortality Database (Good):
+http://www.who.int/healthinfo/mortality_data/en/
+http://apps.who.int/healthinfo/statistics/mortality/causeofdeath_query/
