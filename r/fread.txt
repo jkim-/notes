@@ -1,0 +1,9 @@
+Use fread to read in files fast. 
+
+Run
+install.packages("data.table")
+once to install the package.
+
+Then, every time you need,
+library(data.table)
+data <- fread("data.csv")

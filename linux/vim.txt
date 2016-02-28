@@ -1,0 +1,6 @@
+1. C++11 syntax bracket error:
+   Add 
+   let c_no_curly_error=1
+   to .vimrc
+
+   Souce: http://stackoverflow.com/a/4809465

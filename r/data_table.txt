@@ -1,0 +1,30 @@
+Usually use fread to read in data as a data.table (see fread.txt)
+
+Suppose we have a data.table: 
+  DT<-fread("data.txt")
+
+*Use colClasses to define column data types for better performance
+*Check the tables in memory using tables()
+
+And data.txt consists of 2 columns:
+  A B
+  a 1
+  a 2
+  b 1
+  a 0
+
+Can access elements using [row, col]:
+  DT[,A] returns the "A" column
+  DT[2,] returns 2nd row a, 2
+    DT[A == "a"] returns a, 1; a, 2; a, 0
+
+But better way to organize your data is using keys:
+  setkey(DT, A, B)
+
+Now DT[.("a", 2),] <=> DT[list("a", 2),] <=> DT[A == "a" & B == 2,]
+  
+Grouping:
+  DT[, sum(B), by=A] returns a, 3; b, 1
+
+Reference:
+  https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.pdf

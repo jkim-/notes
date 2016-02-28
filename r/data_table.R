@@ -1,0 +1,7 @@
+library(data.table)
+DT <- data.table(A = c("a","a","b","a"), B = c(1,2,1,0))
+setkey(DT, A, B)
+X <- data.table(A = c("a","a","b","a"), B = c(2,5,6,2))
+setkey(X, A, B)
+Y <- data.table(C = c("a","a","b","a"), B = c(1,2,1,0))
+setkey(Y, C, B)

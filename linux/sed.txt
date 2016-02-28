@@ -1,0 +1,4 @@
+1. Print out specific lines in a file.
+   Example: want to print out lines 24-35 inclusive of file foo.txt
+   sed -n '24, 35p; 35q' foo.txt
+
