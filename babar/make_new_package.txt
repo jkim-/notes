@@ -1,0 +1,14 @@
+Usually, it's the easist to start off with a package from CVS and modify as you go.  
+
+The EffCounter package started as a module appended to the BToDTauNuSemiLepHadUser package,
+and when I was convinced it works as expected, follow
+
+https://www.slac.stanford.edu/BFROOT/www/doc/workbook/newpackage/newpackage.html
+
+to make it your own package.
+
+To` call your package in another package, usually you need to add your module in 3 places.
+
+1) AppUserBuildBase.cc
+2) Main control tcl file
+3) bin_....mk files (if your package hasn't been added to the CVS)

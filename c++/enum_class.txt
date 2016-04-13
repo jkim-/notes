@@ -1,0 +1,8 @@
+Why use enum class over plain enum (C++11)?
+Enum class provides type safety.  For plain enums, if two enums have the same named members in the same scope, it will not compile;
+whereas for enum classes, it is not a problem.
+Additionally, the plain enum, if not initialized, will be implicitly casted to integers; not the case for enum class.
+
+Default values:
+First member is default initialized to 0; every other member is initialized to prev + 1.
+For enum classes, the members cannot be implicitly casted to int. (i.e. must be static_cast<int>(enum_class_member) to extract the value).
